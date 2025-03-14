@@ -30,4 +30,32 @@ const myFunction = function(){
     console.log("Hello from Function")
 }
 
-console.log(typeof myFunction)
+// console.log(typeof myFunction)
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (None-Primitive)
+
+let myName = "Chirag"
+
+let anotherName = myName
+anotherName = "Nabhoya"
+
+// console.log(myName)
+// console.log(anotherName)
+
+let userOne = {
+  name: "Chirag",
+  age: 24,
+  location: "Germany"
+}
+
+let userTwo = userOne
+
+console.log(userOne.name)
+userTwo.name = "Nabhoya"
+
+console.log(userOne.name)
+console.log(userTwo.name)
